@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="display-4">Welcome to Our Landing Page</h1>
+        <p class="lead">This is a simple landing page using Bootstrap</p>
+        <a href="#" class="btn btn-light btn-lg">Learn More</a>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="display-4">Why Choose Us</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus ipsum eget odio faucibus, id facilisis justo vulputate.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Quality Products</h4>
+                            <p class="card-text">We offer high-quality products to our customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Fast Delivery</h4>
+                            <p class="card-text">We ensure fast and reliable delivery of our products.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Excellent Support</h4>
+                            <p class="card-text">Our support team is always ready to assist you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

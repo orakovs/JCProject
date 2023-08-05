@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Login Page{% endblock  %}
+
+{% block content %}
+    <form method="post" id="loginForm">
+        {% csrf_token %}
+        <div class="modal-body">
+            <div class="form-group">
+                {{ form.as_p }}
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button tyspe="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+{% endblock %}
